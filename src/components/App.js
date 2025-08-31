@@ -1,11 +1,13 @@
-
-import React from "react";
+import React,{useState} from "react";
+import Child from "./Child.jsx"
 import './../styles/App.css';
 
 const App = () => {
+  const [isLoggedIn,setisLoggedIn]=useState(false);
+  console.log(isLoggedIn);
   return (
     <div>
-        {/* Do not remove the main div */}
+    <Child setisLoggedIn={setisLoggedIn}/>
     </div>
   )
 }
