@@ -7,6 +7,7 @@ const App = () => {
   console.log(isLoggedIn);
   return (
     <div>
+      <h1>Parent Component</h1>
     <Child setisLoggedIn={setisLoggedIn}/>
     </div>
   )
